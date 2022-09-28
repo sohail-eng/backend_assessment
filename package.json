@@ -1,0 +1,30 @@
+{
+  "name": "node_js_backend_assessment",
+  "version": "1.0.0",
+  "description": "The aim of this assessment is to evaluate your backend skills using NodeJS and by adopting a microservice architecture. The assessment will primarily be a web app where you'll be exposing API endpoints, interacting with Database via ORM, producing and consuming event via Kafka.",
+  "main": "./backend/social/app.js",
+  "scripts": {
+    "start": "nodemon ./backend/social/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohail-eng/Node_Js_Backend_Assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohail-eng/Node_Js_Backend_Assessment/issues"
+  },
+  "homepage": "https://github.com/sohail-eng/Node_Js_Backend_Assessment#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "faker": "^6.6.6",
+    "kafkajs": "^2.2.0",
+    "knex": "^2.3.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  }
+}
