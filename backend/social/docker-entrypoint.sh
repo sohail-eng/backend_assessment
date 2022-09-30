@@ -3,6 +3,6 @@
 echo "Running database migrations"
 yarn migrate
 echo "Seeding database"
-yarn seed
+#yarn seed
 echo "Starting server"
 yarn start

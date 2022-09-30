@@ -10,7 +10,8 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: process.env.SOCIAL_DB,
+      host:     process.env.POSTGRES_HOST,
+      database: process.env.POSTGRES_DATABASE,
       user:     process.env.POSTGRES_USERNAME,
       password: process.env.POSTGRES_PASSWORD,
     },
@@ -19,8 +20,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_Tenant1_migrations'
+      directory: __dirname + '/migrations',
     }
   },
 
 };
+
+
